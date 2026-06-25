@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whittiershoreexcursions.com/sitemap.xml
