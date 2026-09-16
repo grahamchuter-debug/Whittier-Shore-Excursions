@@ -2,9 +2,10 @@
   "name": "whittier-shore-excursions",
   "private": true,
   "scripts": {
-    "build": "python3 scripts/build-whittier-site.py",
-    "deploy": "wrangler deploy",
-    "preview": "python3 -m http.server 8904"
+    "build": "python3 scripts/assemble-public.py",
+    "build:source": "python3 scripts/build-whittier-site.py",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "python3 -m http.server 8904 --directory public"
   },
   "devDependencies": {
     "wrangler": "^4.94.0"
